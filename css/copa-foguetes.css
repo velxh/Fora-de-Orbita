@@ -1,0 +1,63 @@
+/* Sections */
+section {
+    position: relative;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+  } 
+
+.bg-cp-f {
+  background-image: url('../img/falcon-9.webp');
+}
+
+/* Opacidade do background */
+.section-animate::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.section-animate {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.section-inner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%;
+}
+
+.section-inner-center h3 {
+  font-size: 100px;
+  margin-bottom: 15px;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.section-inner-center p {
+  font-size: 20px;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .section-inner-center h3 {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-inner-center h3 {
+    font-size: 50px;
+  }
+}
