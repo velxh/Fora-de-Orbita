@@ -28,13 +28,14 @@ ul{
 }
 
 /* Overlay */
+/* Cinza do menu overlay: #2f3640 */
 .overlay{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(47, 54, 64, 0.75); 
   z-index: 3;
   transition-duration: 0.5s;
 }
@@ -123,7 +124,8 @@ section {
 }
 
 .section-inner h4 {
-  font-size: 22px;
+  color: #26A3DD;
+  font-size: 25px;
   margin-bottom: 5px;
   font-weight: 300;
   animation: fadeInUp 0.5s ease-in-out;
@@ -142,13 +144,87 @@ section {
   animation-fill-mode: both; /*Stop from showing at start*/
 }
 
+
 /* Background images */
+/* Seção A */
 .section-a{
-  background-image: url('../img/copa-foguetes-section-a.JPG');
+  background-image: url('../img/section-a.webp');
 }
+/* Opacidade do background */
+.section-a::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Texto acima da seta */
+.get-to-know-us{
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+}
+.get-to-know-us h4{
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+/* Seta */
+.scroll-arrow {
+  border: 2px solid transparent;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25%;
+  position: absolute;
+  bottom: 50px;
+  left: 49%;
+  transform: translateX(-50%);
+  animation: fadeBounce 2s infinite;
+}
+.scroll-arrow-inert {
+  border: 2px solid #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25%;
+  position: absolute;
+  bottom: 50px;
+  left: 49%;
+}
+.scroll-arrow-inert:hover{
+  transition: 0.5s;
+  background-color: #fff;
+}
+.scroll-arrow-inert:hover a svg path{
+  stroke: #000;
+}
+/* Seção B */
 .section-b {
-  background-image: url('../img/section-b.webp');
+  background-color: rgb(42, 155, 214, 0.5);
 }
+/* lidando com os textos */
+.section-inner-aboutus{
+  position: absolute;
+  bottom: 50%;
+  right: 150px;
+  max-width: 560px;
+}
+.section-inner-aboutus h2{
+  font-size: 60px;
+  text-align: center;
+}
+.section-inner-aboutus h4{
+  font-size: 20px;
+  text-align: center;
+}
+
 .section-c {
   background-image: url('../img/section-c.webp');
 }
@@ -160,16 +236,6 @@ section {
 }
 .section-f {
   background-image: url('../img/section-f.webp');
-}
-
-.section-a::before, .section-b::before, .section-c::before, .section-d::before, .section-e::before,.section-f::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.5);
 }
 
 .btn {
@@ -210,41 +276,6 @@ section {
 
 .btn:hover .hover {
   transform: translateY(0);
-}
-
-.scroll-arrow {
-  border: 2px solid transparent;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25%;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: fadeBounce 2s infinite;
-}
-
-.scroll-arrow-inert {
-  border: 2px solid #fff;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25%;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-}
-
-.scroll-arrow-inert:hover{
-  transition: 0.5s;
-  background-color: #fff;
-}
-
-.scroll-arrow-inert:hover a svg path{
-  stroke: #000;
 }
 
 /* Footer */
@@ -337,7 +368,7 @@ footer ul li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: rgba(42, 155, 214, 0.75);
   z-index: 4;
   display: flex;
   align-items: center;
@@ -371,11 +402,13 @@ footer ul li a:hover {
 
 .mobile-main-menu ul li a {
   color: #fff;
-  transition: color 0.6s;
+  transition: color 0.5s;
 }
 
 .mobile-main-menu ul li a:hover {
-  color: #aaa;
+  transition: 0.25s;
+  /* color: #2D52A6; */
+  color: #26A3DD;
 }
 
 /* Inner Pages */
@@ -485,7 +518,7 @@ footer ul li a:hover {
   }
 
   .section-inner {
-    bottom: 75px;
+    bottom: 200px;
     left: 20px;
   }
 
