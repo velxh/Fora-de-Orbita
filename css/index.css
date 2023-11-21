@@ -122,12 +122,100 @@ section {
 
 /* Seção C */
 .section-c {
-  background-image: url('../img/section-c.webp');
+  /* background-image: url('../img/section-c.webp'); */
+  background-color: rgb(42, 155, 214, 0.2);
+  border-top: 2px solid black;
 }
+/* Título da seção */
+.section-c-title{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  text-align: center;
+}
+.section-c-title h2{
+  font-size: 50px;
+}
+/* Container para os produtos e serviços */
+.section-inner-c{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 50%;
+  width: 100%;
+}
+.container-bg-produto{
+  margin: 25px 80px;
+  max-width: 500px;
+  width: 30%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.transbox{
+  display: none;
+}
+
+.transbox p{
+  margin: auto;
+  width: 90%;
+}
+
+/* KARMA */
+.bg-karma{
+  background-image: url("../img/logo-karma.webp");
+}
+.bg-karma:hover{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-karma:hover .box-karma{
+  display: block;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+/* COPA FOGUETES */
+.bg-copafoguetes{
+  background-image: url("../img/logo-copafoguetes.png");
+}
+
+.bg-copafoguetes:hover{
+  background-size: cover;
+}
+
+.bg-copafoguetes:hover .box-copafoguetes{
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  display: block;  
+  color: #fff;
+  background-color: #000;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+
+
+
 /* BOTÃO */
-.btn {
+/* .btn {
   position: relative;
-  display: inline-block;
+  display: none;
   cursor: pointer;
   text-align: center;
   min-width: 130px;
@@ -157,7 +245,7 @@ section {
 }
 .btn:hover .hover {
   transform: translateY(0);
-}
+} */
 
 
 /* Animações */
