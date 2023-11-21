@@ -7,12 +7,6 @@ section {
   background-size: cover;
   text-transform: uppercase;
 } 
-.section-inner{
-  position: absolute;
-  bottom: 200px;
-  left: 150px;
-  max-width: 560px;
-}
    
 /* Background images */
 /* Seção A */
@@ -30,14 +24,20 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
 }
 /* Textos do lado inferior esquerdo */
-.as h4 {
+.section-inner-a{
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+}
+.section-inner-a h4 {
   color: #26A3DD;
   font-size: 25px;
   margin-bottom: 5px;
   font-weight: 300;
   animation: fadeInUp 0.5s ease-in-out;
 }
-.as h2 {
+.section-inner-a h2 {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -94,34 +94,38 @@ section {
 .section-b {
   background-color: rgb(42, 155, 214, 0.5);
 }
-/* lidando com os textos */
-.section-inner-aboutus{
+.section-inner-b{
   position: absolute;
-  bottom: 50%;
-  right: 150px;
-  max-width: 560px;
-}
-.section-inner-aboutus h2{
-  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
   text-align: center;
+  width: 80%;
 }
-.section-inner-aboutus h4{
-  font-size: 20px;
-  text-align: center;
+.section-inner-b img{
+  width: 40%;
+  min-width: 250px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  vertical-align: middle;
 }
-  
+.about-text-column{
+  display: inline-block;
+  margin: auto;
+  width: 50%;
+  min-width: 500px;
+  vertical-align: auto;
+}
+.section-inner-b h2{
+  margin-bottom: 50px;
+}
+
+/* Seção C */
 .section-c {
   background-image: url('../img/section-c.webp');
 }
-.section-d {
-  background-image: url('../img/section-d.webp');
-}
-.section-e {
-  background-image: url('../img/section-e.webp');
-}
-.section-f {
-  background-image: url('../img/section-f.webp');
-}
+
 
 /* Animações */
 
@@ -164,13 +168,41 @@ section {
 }
 
 /* Media Queries */
+@media (max-width: 1175px) {
+
+  .section-inner-b{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+  }
+  .section-inner-b img{
+    width: 40%;
+    min-width: 250px;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .about-text-column{
+    margin: auto;
+    min-width: 100%;
+  }
+  .about-text-column h2{
+    margin-bottom: 10px;
+  }
+  .about-text-column p{
+    font-size: 50px;
+  }
+}
 @media (max-width: 600px) {
-  .section-inner {
+  .section-inner-a{
     bottom: 200px;
     left: 20px;
   }
 
-  .as h2 {
+  .section-inner-a h2 {
     font-size: 40px;
   }
 }
