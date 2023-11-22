@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.svgcontainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+svg{
+  width: 40%;
+}
+
+path {
+  fill: #1da1f2;
+  stroke: white;
+  stroke-width: 1px;
+}
+
+
+path:hover{
+  fill: purple;
+  stroke: red;
+  stroke-width: 3px;
+  transition: fill 0.4s;
+}
