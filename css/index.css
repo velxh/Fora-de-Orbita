@@ -212,6 +212,9 @@ section {
 
 
 
+
+
+
 /* BOTÃO */
 /* .btn {
   position: relative;
@@ -246,6 +249,60 @@ section {
 .btn:hover .hover {
   transform: translateY(0);
 } */
+
+
+
+
+
+
+/* Seção D */
+.section-d {
+  background-image: url("../img/row-1-column-1.png");
+  background-size: contain;
+  /* background-color: #2A9BD6; */
+}
+
+.logo-index{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-index img{
+  max-width: 500px;
+  min-width: 250px;
+  width: 50%;
+}
+
+/* Seção D */
+.section-e {
+  background-image: url("../img/row-2-column-1.png");
+  background-size: contain;
+  /* background-color: #2A9BD6; */
+}
+
+/* Seção D */
+.section-f {
+  background-image: url("../img/row-3-column-1.png");
+  background-size: contain;
+  /* background-color: #2A9BD6; */
+}
+
+/* Seção D */
+.section-g {
+  background-image: url("../img/row-4-column-1.png");
+  background-size: contain;
+  /* background-color: #2A9BD6; */
+}
+
+
+
+
+
 
 
 /* Animações */
