@@ -124,7 +124,6 @@ section {
 .section-c {
   /* background-image: url('../img/section-c.webp'); */
   background-color: rgb(42, 155, 214, 0.2);
-  border-top: 2px solid black;
 }
 /* Título da seção */
 .section-c-title{
@@ -250,16 +249,11 @@ section {
   transform: translateY(0);
 } */
 
-
-
-
-
-
 /* Seção D */
 .section-d {
-  background-image: url("../img/row-1-column-1.png");
-  background-size: contain;
-  /* background-color: #2A9BD6; */
+  /* background-image: url('../img/section-c.webp'); */
+  background-color: #2A9BD6;
+  border: 2px solid black;
 }
 
 .logo-index{
@@ -280,28 +274,46 @@ section {
 
 /* Seção D */
 .section-e {
-  background-image: url("../img/row-2-column-1.png");
-  background-size: contain;
-  /* background-color: #2A9BD6; */
+  /* background-image: url('../img/section-c.webp'); */
+  background-color: #2A9BD6;
+  border: 2px solid black;
 }
-
 /* Seção D */
 .section-f {
-  background-image: url("../img/row-3-column-1.png");
-  background-size: contain;
-  /* background-color: #2A9BD6; */
+  /* background-image: url('../img/section-c.webp'); */
+  background-color: #2A9BD6;
+  border: 2px solid black;
 }
-
 /* Seção D */
 .section-g {
-  background-image: url("../img/row-4-column-1.png");
-  background-size: contain;
-  /* background-color: #2A9BD6; */
+  /* background-image: url('../img/section-c.webp'); */
+  background-color: #2A9BD6;
+  border: 2px solid black;
 }
 
 
+.circlecontainer{
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 250%;
+  height: 100%;
+  /* background-color: gray; */
+  z-index: 1;
+}
 
-
+.circlecontainer .circle1{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 1;
+  transform: rotate(10deg);
+}
 
 
 
