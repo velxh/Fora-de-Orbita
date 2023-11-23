@@ -1,74 +1,72 @@
 /* Sections */
-/* .section{
+section{
   position: relative;
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
-}  */
+} 
 
-.bg-krm {
-/* background-image: url('../img/dragon.webp'); */
-background-color: black;
-background-image: url("../img/logo-karma-comfonte-semfundo.png");
-position: relative;
-height: 50vh;
-background-position: center center;
-background-repeat: no-repeat;
-background-size: contain;
-text-transform: uppercase;
-border-bottom: 2px solid white;
-}
-/* Opacidade do background */
-
-.bg-common{
+.section-a {
   background-color: black;
-  position: relative;
-  height: 50vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-transform: uppercase;
-  opacity: 0.5;
-}
-
-.bg-common2{
-  background-color: white;
-  position: relative;
-  height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-transform: uppercase;
+  border-bottom: 2px solid white;
 }
 
 
-.section-animate {
+
+.section-inner-a{
   animation: fadeIn 2s ease-in-out;
-}
-
-.section-inner-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   text-align: center;
-  width: 80%;
+  width: 100%;
+  /* background-color: gray; */
 }
 
-.section-inner-center h3 {
+.logo-karma img{
+  width: 50%;
+  max-width: 350px;
+}
+
+.section-inner-a h3 {
   font-size: 50px;
-  margin-bottom: 15px;
-  animation: fadeInUp 0.5s ease-in-out;
+  width: 60%;
+  min-width: 500px;
+  margin: auto;
+  /* animation: fadeInUp 0.5s ease-in-out; NÃO TÁ FUNCIONANDO A ANIMAÇÃO  */
 }
 
-.section-inner-center p {
-  font-size: 20px;
-  animation: fadeInUp 0.5s ease-in-out 0.2s;
-  animation-fill-mode: both;
+
+.texto{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
+
+.texto img{
+  max-width: 250px;
+  width: 100%;
+}
+
+.espelho{
+  width: auto;
+}
+
+.espelho img{
+  width: auto;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
 
 /* Media Queries */
 @media (max-width: 960px) {
