@@ -22,18 +22,32 @@ section {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .section-inner-a h2 {
   position: absolute;
-  bottom: 200px;
-  left: 100px;
-  max-width: 560px;
-  font-size: 50px;
+  bottom: 20%;
+  left: 5%;
+  max-width: 460px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both;
+}
+.logo-estelar{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo-estelar img {
+  max-width: 400px;
+  min-width: 250px;
+  width: 50%;
 }
 
 
@@ -51,6 +65,15 @@ section {
   left: 0px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.arrow-section-b{
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 
 /* Seção C */
@@ -66,6 +89,45 @@ section {
   bottom: 0px;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.logo-karma {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: gray; */
+}
+.logo-karma img {
+  max-width: 300px;
+  min-width: 250px;
+  width: 50%;
+}
+.img-karma {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: gray; */
+}
+.img-karma img {
+  max-width: 90%;
+  min-width: 250px;
+  width: 80%;
+}
+.arrow-section-c{
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -83,69 +145,22 @@ section {
   left: 0px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-
-/* Seta */
-.arrow{
+.logo-copafoguetes {
   position: absolute;
-  bottom: 100px;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   display: flex;
   justify-content: center;
+  /* background-color: gray; */
+}
+.logo-copafoguetes img {
+  max-width: 500px;
+  min-width: 250px;
+  width: 50%;
 }
 
-.arrow-section-b{
-  position: absolute;
-  bottom: 55px;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.scroll-arrow {
-  position: absolute;
-  border: 2px solid transparent;
-  padding: 10px 5px;
-  border-radius: 25%;
-  width: 45px;
-  animation: fadeBounce 2s infinite;
-}
-
-.scroll-arrow-inert {
-  position: absolute;
-  border: 2px solid #fff;
-  padding: 10px 5px;
-  border-radius: 25%;
-  width: 45px;
-}
-
-.scroll-arrow-inert:hover {
-  transition: 0.5s;
-  background-color: #fff;
-}
-
-.scroll-arrow-inert:hover a svg path {
-  stroke: #000;
-}
-
-/* Texto acima da seta */
-.get-to-know-us {
-  position: absolute;
-  bottom: 100px;
-  width: 100%;
-}
-
-.get-to-know-us p{
-  color: #fff;
-  font-size: 15px;
-  margin-bottom: 10px;
-  text-align: center;
-  animation: fadeInUp 0.5s ease-in-out;
-}
 
 /* BOTÃO */
 .btn {
@@ -187,76 +202,58 @@ section {
 }
 
 
-/* Seção D */
-.logo-index {
+/* Seta */
+.arrow{
   position: absolute;
-  top: 40%;
+  bottom: 100px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: gray;
 }
 
-.logo-index img {
-  max-width: 500px;
-  min-width: 250px;
-  width: 50%;
-}
-
-.logo-index-karma {
+/* Texto acima da seta */
+.arrow-text{
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 5%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  /* background-color: gray; */
 }
 
-.logo-index-karma img {
-  max-width: 300px;
-  min-width: 250px;
-  width: 50%;
+.arrow-text p{
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-in-out;
 }
 
-.img-karma {
+.scroll-arrow {
   position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  /* background-color: gray; */
+  border: 2px solid transparent;
+  padding: 10px 5px;
+  border-radius: 25%;
+  width: 45px;
+  animation: fadeBounce 2s infinite;
 }
 
-.img-karma img {
-  max-width: 90%;
-  min-width: 250px;
-  width: 80%;
-}
-
-.logo-index-copafoguetes {
+.scroll-arrow-inert {
   position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  /* background-color: gray; */
+  border: 2px solid #fff;
+  padding: 10px 5px;
+  border-radius: 25%;
+  width: 45px;
 }
 
-.logo-index-copafoguetes img {
-  max-width: 500px;
-  min-width: 250px;
-  width: 50%;
+.scroll-arrow-inert:hover {
+  transition: 0.5s;
+  background-color: #fff;
 }
 
-
-
+.scroll-arrow-inert:hover a svg path {
+  stroke: #000;
+}
 
 
 /* Animações */

@@ -1,26 +1,48 @@
 /* Sections */
-section {
+/* .section{
   position: relative;
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
-} 
+}  */
 
 .bg-krm {
-background-image: url('../img/dragon.webp');
+/* background-image: url('../img/dragon.webp'); */
+background-color: black;
+background-image: url("../img/logo-karma-comfonte-semfundo.png");
+position: relative;
+height: 50vh;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
+text-transform: uppercase;
+border-bottom: 2px solid white;
 }
 /* Opacidade do background */
-.section-animate::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
+
+.bg-common{
+  background-color: black;
+  position: relative;
+  height: 50vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-transform: uppercase;
+  opacity: 0.5;
 }
+
+.bg-common2{
+  background-color: white;
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-transform: uppercase;
+}
+
 
 .section-animate {
   animation: fadeIn 2s ease-in-out;
@@ -37,7 +59,7 @@ background-image: url('../img/dragon.webp');
 }
 
 .section-inner-center h3 {
-  font-size: 100px;
+  font-size: 50px;
   margin-bottom: 15px;
   animation: fadeInUp 0.5s ease-in-out;
 }
