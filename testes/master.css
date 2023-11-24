@@ -111,3 +111,46 @@ path {
 .RegiaoSul {
   fill:#ff9900;
 }
+
+
+
+
+.seta {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  transform: rotate (90deg);
+}
+.seta span {
+  width: 50px;
+  height: 5px;
+  background-color: greenyellow;
+  position: relative;
+}
+.seta span:before,
+.seta span:after {
+  margin-left: 22px;
+  content: "";
+  width: 35px;
+  height: 100%;
+  background-color: greenyellow;
+  position: relative;
+  display: flex;
+}
+.seta span:before {
+  -moz-transform: rotate (45deg);
+  -ms-transform: rotate (45deg);
+  -o-transform: rotate (45deg);
+  -webkit-transform: rotate (45deg);
+  transform: rotate (45deg);
+  bottom: 11px;
+}
+.seta span:after {
+  -moz-transform: rotate (-45deg);
+  -ms-transform: rotate (-45deg);
+  -o-transform: rotate (-45deg);
+  -webkit-transform: rotate (-45deg);
+  transform: rotate (-45deg);
+  bottom: -6px;
+}

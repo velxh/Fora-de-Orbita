@@ -12,7 +12,7 @@ section {
 /* Background images */
 /* Seção A */
 .section-a {
-  background-image: url('../img/index-bg1.png');
+  background-image: url('../img/image1x1.png');
 }
 /* Opacidade do background */
 .section-a::before{
@@ -53,7 +53,7 @@ section {
 
 /* Seção B */
 .section-b {
-  background-image: url('../img/index-bg2.png');
+  background-image: url('../img/image1x2.png');
 }
 /* Opacidade do background */
 .section-b::before{
@@ -78,7 +78,7 @@ section {
 
 /* Seção C */
 .section-c {
-  background-image: url('../img/index-bg3.png');
+  background-image: url('../img/image1x3.png');
 }
 /* Opacidade do background */
 .section-c::before{
@@ -133,7 +133,7 @@ section {
 
 /* Seção D */
 .section-d {
-  background-image: url('../img/index-bg4.png');
+  background-image: url('../img/image1x4.png');
 }
 /* Opacidade do background */
 .section-d::before{

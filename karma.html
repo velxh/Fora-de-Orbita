@@ -1,83 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/karma.css"/>
-    <script src="js/script.js" defer></script>
-    <title>Estelar</title>
-  </head>
-  <body>
 
-    <div id="overlay"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/karma.css" />
+  <script src="js/script.js" defer></script>
+  <title>Estelar</title>
+</head>
 
-    <header class="main-header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/Icone_azul.png" alt="Estelar" />
-        </a>
-      </div>
-      <nav class="desktop-main-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="copa-foguetes.html">Copa Foguetes</a></li>
-          <li><a href="mentoria.html">Mentoria</a></li>
-          <li><a href="karma.html">Karma</a></li>
-          <li><a href="contatos.html">Contatos</a></li>
-          <li><a href="loja.html">Loja</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
 
-    <!-- Mobile Menu -->
-    <button id="menu-btn" class="hamburger" type="button">
-      <span class="hamburger-top"></span>
-      <span class="hamburger-middle"></span>
-      <span class="hamburger-bottom"></span>
-    </button>
+  <div id="overlay"></div>
 
-    <div id="mobile-menu" class="mobile-main-menu">
-      <ul>
-        <li class="mobile-only"><a href="index.html">Home</a></li>
-        <li class="mobile-only"><a href="copa-foguetes.html">Copa Foguetes</a></li>
-        <li class="mobile-only"><a href="mentoria.html">Mentoria</a></li>
-        <li class="mobile-only"><a href="karma.html">Karma</a></li>
-        <li class="mobile-only"><a href="#">Contatos</a></li>
-        <li class="mobile-only"><a href="#">Loja</a></li>
-      </ul>
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/Icone_azul.png" alt="Estelar" />
+      </a>
     </div>
-
-    <!-- Section A -->
-    <section id="section-a" class="section-a">
-      <div class="section-inner-a">
-        <div class="logo-karma"><img src="img/logo-karma-comfonte-semfundo.png" alt=""></div>
-
-        <div class="texto">
-          <div class="espelho"><img src="img/seta.png" alt=""></div>
-          <h3>O foguete educacional mais avançado do Brasil</h3>
-          <img src="img/seta.png" alt="">
-        </div>
-        
-      </div>
-    </section>
-
-    <script type="text/javascript">
-      window.onscroll = function(){scrollHeaderOverlay()};
-    </script>
-
-    <footer>
+    <nav class="desktop-main-menu">
       <ul>
-        <li>SpaceX &copy; 2022</li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">YouTube</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Flickr</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Suppliers</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="copa-foguetes.html">Copa Foguetes</a></li>
+        <li><a href="mentoria.html">Mentoria</a></li>
+        <li><a href="karma.html">Karma</a></li>
+        <li><a href="contatos.html">Contatos</a></li>
+        <li><a href="loja.html">Loja</a></li>
       </ul>
-    </footer>
-  </body>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <button id="menu-btn" class="hamburger" type="button">
+    <span class="hamburger-top"></span>
+    <span class="hamburger-middle"></span>
+    <span class="hamburger-bottom"></span>
+  </button>
+
+  <div id="mobile-menu" class="mobile-main-menu">
+    <ul>
+      <li class="mobile-only"><a href="index.html">Home</a></li>
+      <li class="mobile-only"><a href="copa-foguetes.html">Copa Foguetes</a></li>
+      <li class="mobile-only"><a href="mentoria.html">Mentoria</a></li>
+      <li class="mobile-only"><a href="karma.html">Karma</a></li>
+      <li class="mobile-only"><a href="#">Contatos</a></li>
+      <li class="mobile-only"><a href="#">Loja</a></li>
+    </ul>
+  </div>
+
+  <!-- Section A -->
+  <section id="section-a" class="section-a">
+    <div class="section-inner-a">
+      <div class="logo-karma"><img src="img/logo-karma-comfonte-semfundo.png" alt=""></div>
+
+      <div class="texto">
+        <img src="img/seta.png" alt="" id="seta-esquerda">
+        <h3>O foguete educacional mais avançado do Brasil</h3>
+        <img src="img/seta.png" alt="" id="seta-direita">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section B -->
+  <section id="section-b" class="section-b">
+    <div class="section-inner-b">
+      <div class="bg-citation">
+        <h2>O KARMA É UM VEÍCULO LANÇADOR DE SATÉLITES EDUCACIONAIS CONSTRUÍDO PELA ESTELAR EM PARCERIA COM A OLIMPÍADA BRASILEIRA DE ASTRONOMIA E ASTRONAUTICA E A BAIUCA SPORTS CAPAZ DE LANÇAR 3 CUBESATS PARA 3KM DE ALTURA E RETORNAR COM SEGURANÇA</h2>
+      </div>
+      <p>Mahatma Gandhi</p>   
+
+
+      <div class="logos-patrocinio">
+        <img src="../img/logo-OBA.png" alt="">
+        <img src="../img/logo-MOBFOG.png" alt="">
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!-- Section C -->
+  <section id="section-c" class="section-c">
+    <div class="section-inner-c">
+
+    </div>
+  </section>
+
+
+  <script type="text/javascript">
+    window.onscroll = function () { scrollHeaderOverlay() };
+  </script>
+
+  <footer>
+    <ul>
+      <li>SpaceX &copy; 2022</li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Flickr</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Suppliers</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
